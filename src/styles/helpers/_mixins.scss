@@ -1,0 +1,92 @@
+/*
+    Buttons 
+---------------*/
+@mixin primary-button ($bgColor, $font-color: #ffffff, $hoverColor: darken($bgColor, 10%), $font-size: 100% ) {
+    font-size: $font-size;
+    color: $font-color;
+    border-radius: 3px;
+    background-color: $bgColor;
+    box-shadow: 0px 3px 6px -4px #a2a2a2;
+    transition: all 0.8s ease-in-out;
+    word-spacing: 3px;
+
+    &:active, &:focus{
+        box-shadow: 0 0 0 0.2rem $hoverColor;
+    }
+
+    &:hover {
+        background: $hoverColor;
+        border-color: $hoverColor;
+    }
+
+    @include phablet {
+        font-size: $font-size + 5%;
+    }
+
+    @include tablet {
+        font-size: $font-size + 10%;
+        padding: 8px 16px;
+    }
+
+    @include smallLaptop {
+        font-size: $font-size + 15%;
+    }
+
+    @include laptop {
+        font-size: $font-size + 20%;
+        padding: 10px 20px;
+    }
+
+    @include desktop {
+        font-size: $font-size + 25%;
+    }
+}
+
+@mixin ghost-button ($bgColor, $font-color: #ffffff, $fontSize: 100%) {
+    color: $bgColor;
+    border-color: $bgColor;
+    font-size: $fontSize;
+    background: transparent;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0px 3px 6px -4px #a2a2a2;
+    transition: all 0.5s ease-in-out;
+
+    &:focus, &:active {
+        box-shadow: 0 0 0 0.2rem $bgColor;
+    }
+
+    &:hover {
+        color: $font-color;
+        background-color: $bgColor;
+    }
+}
+
+@mixin home-page-title($font-size) {
+    padding-top: 25px;
+    font-size: $font-size;
+    text-align: center;
+    font-weight: normal;
+    word-spacing: 3px;
+
+    @include phablet {
+        font-size: $font-size + 5%;
+    }
+
+    @include tablet {
+        font-size: $font-size + 10%;
+    }
+
+    @include smallLaptop {
+        font-size: $font-size + 15%;
+    }
+
+    @include laptop {
+        font-size: $font-size + 20%;
+    }
+
+    @include desktop {
+        font-size: $font-size + 25%;
+    }
+}
+
+

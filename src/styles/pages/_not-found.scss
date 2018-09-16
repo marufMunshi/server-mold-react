@@ -1,0 +1,39 @@
+#not-found-section {
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-404 {
+    text-align: center;
+    
+    img {
+        width: 256px;
+        height: auto;
+    }
+}
+
+.not-found-description {
+    text-align: center;
+}
+
+.not-found-description__title {
+    @include home-page-title(250%);
+    color: #dd352d;
+    padding-top: 10px;
+}
+
+.not-found-description__link {
+    @include home-page-title(130%);
+    font-family: $secondary-font;
+    padding-top: 35px; 
+    a {
+        color: #0056b3;
+    }
+}
+
+// <div>Icons made by <a href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>

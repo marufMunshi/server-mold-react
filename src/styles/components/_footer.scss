@@ -1,0 +1,130 @@
+footer {
+    color: #555;
+    border: 2px solid $primary-color;
+
+    .footer-img {
+        text-align: center;
+        padding:  25px 0;
+    }
+
+    img {
+        display: inline-block;
+        height: 60px;
+        width: auto;
+
+        @include tablet {
+            height: 65px;
+        }
+
+        @include smallLaptop {
+            height: 70px;
+        }
+
+        @include desktop {
+            height: 75px;
+        }
+    }
+
+    .footer-div {
+        min-height: 285px;
+        width: auto;
+        text-align: center;
+        padding: 15px 0;
+        background: rgba(142, 183, 161, 0.25);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
+        @include tablet {
+            min-height: 310px;
+        }
+    }
+
+    .footer-div__title {
+        @include home-page-title(140%);
+        padding: 0;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .footer-div__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            padding: 5px 0;
+            font-family: $secondary-font;
+    
+            span {
+                font-size: 105%;
+
+                @include phablet {
+                    font-size: 105%;
+                }
+        
+                @include tablet {
+                    font-size: 110%;
+                }
+
+                @include smallLaptop {
+                    font-size: 120%;
+                }
+            }
+            
+            i {
+                margin-right: 10px;
+                font-size: 180%;
+                vertical-align: middle;
+                color: darken($primary-color, 15%);
+
+                @include phablet {
+                    font-size: 185%;
+                }
+        
+                @include tablet {
+                    font-size: 190%;
+                }
+
+                @include smallLaptop {
+                    font-size: 200%;
+                }
+            }
+    
+            a {
+                font-size: 105%;
+
+                @include phablet {
+                    font-size: 110%;
+                }
+        
+                @include tablet {
+                    font-size: 115%;
+                }
+
+                @include smallLaptop {
+                    font-size: 120%;
+                }
+            }
+
+            .facebook {
+                margin-right: 30px; 
+            }
+
+            .facebook-color {
+                color:  #3b5998;
+            }
+            .twitter-color {
+                color: #00aced;
+            }
+        }
+    }
+
+
+    .copyright {
+        padding: 10px;
+        background-color: #fff;
+        color: #2C3E50;
+        text-align: center;
+        font-size: 85%;
+    }
+}
