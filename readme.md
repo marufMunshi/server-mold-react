@@ -3,7 +3,7 @@
 ## A hosting site made with React.
 
 # Live
-
+Demo https://server-mold-react.herokuapp.com/
 # Built With
 
 * [React](https://reactjs.org/)
@@ -25,5 +25,8 @@
 * For module bundling used Webpack
 
 # How to use
+* >$ git clone git@github.com:marufMunshi/server-mold-react.git
+
+* > $ npm install
 
 
