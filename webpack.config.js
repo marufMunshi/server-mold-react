@@ -63,7 +63,10 @@ module.exports = (env) => {
         },
         plugins : [
             CSSExtract,
-            new Dotenv()
+            new Dotenv({
+                path: path.resolve(__dirname, './.env'),
+                systemvars: true
+            })
         ],
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         mode: isProduction ? 'production' : 'development',
