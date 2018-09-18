@@ -12,6 +12,7 @@
 
     &:active, &:focus{
         box-shadow: 0 0 0 0.2rem $hoverColor;
+        outline: none;
     }
 
     &:hover {
