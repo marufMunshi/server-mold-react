@@ -27,7 +27,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "firebase": "^5.5.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "particlesjs": "^2.2.3",
     "postcss-flexbox": "^1.0.3",
     "postcss-flexboxfixer": "0.0.5",
